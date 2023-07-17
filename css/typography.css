@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'LibreFranklin-Light';
+    src: url('../fonts/LibreFranklin-Light.ttf');
+}
+@font-face {
+    font-family: 'LibreFranklin-SemiBold';
+    src: url('../fonts/LibreFranklin-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'LibreFranklin-Bold';
+    src: url('../fonts/LibreFranklin-Bold.ttf');
+}

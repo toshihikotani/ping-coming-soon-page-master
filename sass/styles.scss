@@ -1,0 +1,26 @@
+@import url('typography.css'); 
+
+// COLORS
+
+// Primary
+$blue: hsl(223, 87%, 63%);
+
+// Secondary
+$paleBlue: hsl(223, 100%, 88%);
+$lightRed: hsl(354, 100%, 66%);
+
+// Neutral
+$gray: hsl(0, 0%, 59%);
+$veryDarkBlue: hsl(209, 33%, 12%);
+
+html, body {
+    min-width: 100vw;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
