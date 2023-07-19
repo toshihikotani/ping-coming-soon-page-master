@@ -3,20 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://kit.fontawesome.com/463aaca3bb.css" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Ping coming soon page</title>
 </head>
 <body>
+  <!--CONTAINER-->
+  <div class="container">
 
-  We are launching soon!
+    <!--HEADER-->
+    <header>
+        <!--LOGO IMAGE-->
+        <img class="logo-image" src="images/logo.svg" alt="Ping Logo" aria-hidden="true"/>
+    </header>
 
-  Subscribe and get notified
+    <!--MAIN-->
+    <main>
 
-  Notify Me
+      <!--LAUNCH TEXT-->
+      <h1 class="launching-header">We are launching <span class="bold-header">soon!</span></h1>
 
-  &copy; Copyright Ping. All rights reserved.
+      <!--SUBSCRIPTION PARAGRAPH-->
+      <p class="subscribe-paragraph">Subscribe and get notified</p>
+
+      <!--EMAIL FORM-->
+      <form class="email-form">
+        <!--INPUT FIELD-->
+        <input type="text" placeholder="Your email address...">
+        <!--ERROR MESSAGE-->
+        <p class="error-message">Please provide a valid email address</p>
+        <!--SUBMIT BUTTON-->
+        <button type="submit" class="notification-btn">Notify Me</button>
+      </form>
+
+      <!--DASHBOARD IMAGE-->
+      <img class="dashboard-image" src="images/illustration-dashboard.png" alt="Dashboard Illustration" aria-hidden="true">
+
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+
+      <!--SOCIAL MEDIA ICONS-->
+      <div class="social-icons">
+        <!--FACEBOOK ICON-->
+        <a href="#" aria-label="Facebook" class="circle-border">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <!--TWITTER ICON-->
+        <a href="#" aria-label="Twitter" class="circle-border">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <!--INSTAGRAM ICON-->
+        <a href="#" aria-label="Instagram" class="circle-border">
+          <i class="fa-brands fa-instagram"></i>
+        </a>      
+      </div>
+
+      <!--COPYRIGHT TEXT-->
+      <p class="footer-copyright">&copy; Copyright Ping. All rights reserved.</p>
+
+    </footer>
+  </div>
+  
+<!--FONT AWESOME SCRIPT-->
+<script src="https://kit.fontawesome.com/463aaca3bb.js" crossorigin="anonymous"></script>
+<!--JAVASCRIPT FILE-->
 <script src="js/script.js"></script>
+
 </body>
 </html>
