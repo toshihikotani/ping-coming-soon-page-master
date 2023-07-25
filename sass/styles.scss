@@ -1,4 +1,4 @@
-@import url('typography.css'); 
+@import url("typography.css");
 
 // COLORS
 
@@ -13,19 +13,132 @@ $lightRed: hsl(354, 100%, 66%);
 $gray: hsl(0, 0%, 59%);
 $veryDarkBlue: hsl(209, 33%, 12%);
 
-html, body {
-    min-width: 100vw;
+html,
+body {
+  min-width: 100vw;
 }
 
 body {
-    min-height: 100vh;
-    font-size: 20px;
+  min-height: 100vh;
+  font-size: 20px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // CONTAINER
 .container {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 375px;
+  text-align: center;
+
+  // HEADER
+  header {
+    .logo-image {
+      display: block;
+      margin: auto;
+      width: 20%;
+    }
+  }
+
+  // MAIN
+  main {
+    margin-bottom: 11rem;
+
+    // LAUNCHING HEADER
+    .launching-header {
+      margin-top: 3rem;
+      font-family: "LibreFranklin-Light";
+      font-size: 1.4em;
+
+      color: $gray;
+
+      .bold-header {
+        font-family: "LibreFranklin-Bold" !important;
+        color: black;
+      }
+    }
+
+    // SUBSCRIBE PARAGRAPH
+    .subscribe-paragraph {
+      margin-bottom: 2.5rem;
+      font-family: "LibreFranklin-Light";
+      font-size: 0.8em;
+    }
+
+    // EMAIL FORM
+    .email-form {
+      display: flex;
+      flex-direction: column;
+
+      // INPUT FIELD (EMAIL)
+      input[type="text"] {
+        margin: 0 auto 1rem;
+        border: 1px solid $gray;
+        border-radius: 50px;
+        width: 85%;
+        height: 50px;
+        padding: 0px 20px;
+        font-family: "LibreFranklin-Light";
+        color: $paleBlue;
+      }
+
+      .error-message {
+        display: none;
+      }
+
+      // NOTIFICATION BUTTON
+      .notification-btn {
+        margin: 0 auto;
+        border: 1px solid $blue;
+        border-radius: 50px;
+        width: 95%;
+        height: 50px;
+        padding: 2px 20px;
+        background-color: $blue;
+        font-family: "LibreFranklin-SemiBold";
+        color: white;
+      }
+    }
+
+    // DASHBOARD IMAGE
+    .dashboard-image {
+      margin-top: 5rem;
+      width: 100%;
+    }
+  }
+
+  // FOOTER
+  footer {
+    .social-icons {
+      padding: 0;
+      margin-bottom: 2rem;
+      list-style-type: none;
+      .circle-border {
+        display: inline-block;
+        position: relative;
+        width: 32px;
+        height: 32px;
+        border: 1px solid $paleBlue;
+        border-radius: 50px;
+        margin: 0px 6px;
+
+        a {
+          position: absolute;
+          top: 16%;
+          left: 24%;
+          color: $blue;
+
+          .fa-brands {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .footer-copyright {
+      font-family: "LibreFranklin-Light";
+      font-size: 0.63em;
+    }
+  }
 }

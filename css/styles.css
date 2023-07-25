@@ -1,18 +1,103 @@
 @import url("typography.css");
-html, body {
+html,
+body {
   min-width: 100vw;
 }
 
 body {
   min-height: 100vh;
   font-size: 20px;
-}
-
-.container {
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container {
+  width: 375px;
+  text-align: center;
+}
+.container header .logo-image {
+  display: block;
+  margin: auto;
+  width: 20%;
+}
+.container main {
+  margin-bottom: 11rem;
+}
+.container main .launching-header {
+  margin-top: 3rem;
+  font-family: "LibreFranklin-Light";
+  font-size: 1.4em;
+  color: hsl(0deg, 0%, 59%);
+}
+.container main .launching-header .bold-header {
+  font-family: "LibreFranklin-Bold" !important;
+  color: black;
+}
+.container main .subscribe-paragraph {
+  margin-bottom: 2.5rem;
+  font-family: "LibreFranklin-Light";
+  font-size: 0.8em;
+}
+.container main .email-form {
+  display: flex;
+  flex-direction: column;
+}
+.container main .email-form input[type=text] {
+  margin: 0 auto 1rem;
+  border: 1px solid hsl(0deg, 0%, 59%);
+  border-radius: 50px;
+  width: 85%;
+  height: 50px;
+  padding: 0px 20px;
+  font-family: "LibreFranklin-Light";
+  color: hsl(223deg, 100%, 88%);
+}
+.container main .email-form .error-message {
+  display: none;
+}
+.container main .email-form .notification-btn {
+  margin: 0 auto;
+  border: 1px solid hsl(223deg, 87%, 63%);
+  border-radius: 50px;
+  width: 95%;
+  height: 50px;
+  padding: 2px 20px;
+  background-color: hsl(223deg, 87%, 63%);
+  font-family: "LibreFranklin-SemiBold";
+  color: white;
+}
+.container main .dashboard-image {
+  margin-top: 5rem;
+  width: 100%;
+}
+.container footer .social-icons {
+  padding: 0;
+  margin-bottom: 2rem;
+  list-style-type: none;
+}
+.container footer .social-icons .circle-border {
+  display: inline-block;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border: 1px solid hsl(223deg, 100%, 88%);
+  border-radius: 50px;
+  margin: 0px 6px;
+}
+.container footer .social-icons .circle-border a {
+  position: absolute;
+  top: 16%;
+  left: 24%;
+  color: hsl(223deg, 87%, 63%);
+}
+.container footer .social-icons .circle-border a .fa-brands {
+  font-size: 18px;
+}
+.container footer .footer-copyright {
+  font-family: "LibreFranklin-Light";
+  font-size: 0.63em;
 }
 
 /*# sourceMappingURL=styles.css.map */
