@@ -67,6 +67,11 @@ body {
   background-color: hsl(223deg, 87%, 63%);
   font-family: "LibreFranklin-SemiBold";
   color: white;
+  box-shadow: 1px 4px 6px #4f7df3;
+}
+.container main .email-form .notification-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 .container main .dashboard-image {
   margin-top: 5rem;
@@ -86,11 +91,20 @@ body {
   border-radius: 50px;
   margin: 0px 6px;
 }
+.container footer .social-icons .circle-border:hover {
+  cursor: pointer;
+  background-color: hsl(223deg, 87%, 63%);
+}
 .container footer .social-icons .circle-border a {
+  width: inherit;
+  height: inherit;
   position: absolute;
-  top: 16%;
-  left: 24%;
+  top: 18%;
+  left: 1%;
   color: hsl(223deg, 87%, 63%);
+}
+.container footer .social-icons .circle-border a:hover {
+  color: white;
 }
 .container footer .social-icons .circle-border a .fa-brands {
   font-size: 18px;
@@ -98,6 +112,57 @@ body {
 .container footer .footer-copyright {
   font-family: "LibreFranklin-Light";
   font-size: 0.63em;
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1440px;
+  }
+  .container header .logo-image {
+    margin: 8px auto;
+    width: 6%;
+  }
+  .container main {
+    margin-bottom: 4rem;
+  }
+  .container main .launching-header {
+    margin-bottom: 1.2rem;
+    font-size: 2.4em;
+  }
+  .container main .subscribe-paragraph {
+    font-size: 1em;
+  }
+  .container main .email-form {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container main .email-form input[type=text] {
+    margin: 0 18px 0 0;
+    width: 26%;
+    font-size: 1.15rem;
+  }
+  .container main .email-form .notification-btn {
+    margin: 0;
+    width: 14%;
+  }
+  .container main .dashboard-image {
+    margin-top: 5.5rem;
+    width: 45%;
+  }
+  .container footer .social-icons {
+    margin-bottom: 1.2rem;
+  }
+  .container footer .social-icons .circle-border {
+    width: 26px;
+    height: 26px;
+    margin: 0px 6px;
+  }
+  .container footer .social-icons .circle-border a {
+    top: 5%;
+  }
+  .container footer .social-icons .circle-border a .fa-brands {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -98,6 +98,12 @@ body {
         background-color: $blue;
         font-family: "LibreFranklin-SemiBold";
         color: white;
+        box-shadow: 1px 4px 6px opacify($color: $blue, $amount: 0.1);
+
+        &:hover {
+          cursor: pointer;
+          opacity: 0.8;
+        }
       }
     }
 
@@ -123,11 +129,22 @@ body {
         border-radius: 50px;
         margin: 0px 6px;
 
+        &:hover {
+          cursor: pointer;
+          background-color: $blue;
+        }
+
         a {
+          width: inherit;
+          height: inherit;
           position: absolute;
-          top: 16%;
-          left: 24%;
+          top: 18%;
+          left: 1%;
           color: $blue;
+
+          &:hover {
+            color: white;
+          }
 
           .fa-brands {
             font-size: 18px;
@@ -139,6 +156,83 @@ body {
     .footer-copyright {
       font-family: "LibreFranklin-Light";
       font-size: 0.63em;
+    }
+  }
+}
+
+// LAPTOP
+@media only screen and (min-width: 1200px) {
+  // CONTAINER
+  .container {
+    width: 1440px;
+
+    // HEADER
+    header {
+      .logo-image {
+        margin: 8px auto;
+        width: 6%;
+      }
+    }
+
+    // MAIN
+    main {
+      margin-bottom: 4rem;
+
+      // LAUNCHING HEADER
+      .launching-header {
+        margin-bottom: 1.2rem;
+        font-size: 2.4em;
+      }
+
+      // SUBSCRIBE PARAGRAPH
+      .subscribe-paragraph {
+        font-size: 1em;
+      }
+
+      // EMAIL FORM
+      .email-form {
+        flex-direction: row;
+        justify-content: center;
+
+        // INPUT FIELD (EMAIL)
+        input[type="text"] {
+          margin: 0 18px 0 0;
+          width: 26%;
+          font-size: 1.15rem;
+        }
+
+        // NOTIFICATION BUTTON
+        .notification-btn {
+          margin: 0;
+          width: 14%;
+        }
+      }
+
+      // DASHBOARD IMAGE
+      .dashboard-image {
+        margin-top: 5.5rem;
+        width: 45%;
+      }
+    }
+
+    // FOOTER
+    footer {
+      .social-icons {
+        margin-bottom: 1.2rem;
+        .circle-border {
+          width: 26px;
+          height: 26px;
+          margin: 0px 6px;
+
+          a {
+            top: 5%;
+
+            .fa-brands {
+              font-size: 16px;
+            }
+          }
+        }
+      }
     }
   }
 }
